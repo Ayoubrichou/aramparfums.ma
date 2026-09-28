@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ARAM PARFUM - عطور فاخرة رجالية ونسائية بأسعار مميزة، توصيل مجاني لجميع مدن المغرب.">
+    <title>ARAM PARFUM | عالم العطور الفاخرة</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='58' font-weight='bold' fill='%23d4af37' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo gold-text">ARAM PARFUM</a>
+            
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">الرئيسية</a></li>
+                <li><a href="#about">عن ARAM</a></li>
+                <li><a href="#women-collection">تشكيلة النساء</a></li>
+                <li><a href="#men-collection">تشكيلة الرجال</a></li>
+                <li><a href="#custom-pack">طلب العطور</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://www.instagram.com/aram_parfum?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-head-link" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/212634867129" target="_blank" class="social-head-link" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <button class="nav-toggle-btn" id="navToggleBtn" aria-label="فتح القائمة">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ================= HERO BRAND BANNER ================= -->
+    <section class="hero-banner" id="hero">
+        <div class="hero-content">
+            <img src="images/logo.png" alt="ARAM PARFUM Logo" class="brand-logo-img" onerror="this.style.display='none'">
+            <div class="hero-subtitle">Maison De Haute Parfumerie</div>
+            <h1 class="hero-title gold-text">ARAM PARFUM</h1>
+            <p class="hero-desc">حيث تلتقي الفخامة بالكمال، وتتجسد الأناقة في نفحات عطرية لا تُنسى.</p>
+            <a href="#custom-pack" class="btn-gold">اطلب عطرك الآن</a>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ARAM SECTION ================= -->
+    <section class="section-padding container" id="about">
+        <div class="about-card">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <div class="hero-subtitle">قصة التميز والحرفية</div>
+                <h2 class="gold-text">عن دار ARAM PARFUM</h2>
+                <div class="divider">
+                    <div class="line"></div>
+                    <i class="fa-solid fa-crown"></i>
+                    <div class="line"></div>
+                </div>
+            </div>
+            
+            <p class="about-text">
+                في دار <strong>ARAM PARFUM</strong>، لا نصنع العطور فحسب، بل نسجُ أحلاماً وأساطير تُحفر في الذاكرة. تأسست دارنا على مفهوم الفخامة المطلقة والبحث المستمر عن أندر النفحات العطرية حول العالم؛ من أجود أنواع العود المعتق والمسك الملكي، إلى أندر الزهور الاستوائية.
+            </p>
+            <p class="about-text">
+                كل قنينة من <strong>ARAM PARFUM</strong> هي تحفة فنية مصممة خصيصاً للشخصيات التي لا تقبل إلا بالقمة، وتضع بصمتها الفاخرة أينما حلت.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= WOMEN COLLECTION ================= -->
+    <section class="section-padding container" id="women-collection">
+        <div class="section-header">
+            <h2 class="gold-text">تشكيلة النساء - Collection Femme</h2>
+            <p style="color: var(--text-muted)">لمسات أنثوية ملكية تأسر الحواس (جميع العطور بـ 50 DH)</p>
+            <div class="divider">
+                <div class="line"></div>
+                <i class="fa-solid fa-gem"></i>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="product-grid" id="womenGrid"></div>
+    </section>
+
+    <!-- ================= MEN COLLECTION ================= -->
+    <section class="section-padding container" id="men-collection">
+        <div class="section-header">
+            <h2 class="gold-text">تشكيلة الرجال - Collection Homme</h2>
+            <p style="color: var(--text-muted)">عطور رجالية قوية تعكس الجاذبية والهيبة (جميع العطور بـ 50 DH)</p>
+            <div class="divider">
+                <div class="line"></div>
+                <i class="fa-solid fa-crown"></i>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="product-grid" id="menGrid"></div>
+    </section>
+<!-- ================= DIRECT ORDER SECTION (PACK EXCLUSIVE) ================= -->
+<section class="section-padding container" id="custom-pack">
+    <div class="section-header">
+        <h2 class="gold-text">طلب Pack العطور</h2>
+        <p style="color: var(--text-muted)">اجمع الـ Pack الخاص بك (  3 50ML عطور   ) واستفد من التوصيل المجاني</p>
+            <div class="divider">
+                <div class="line"></div>
+                <i class="fa-solid fa-box-open"></i>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="pack-order-container">
+            <!-- 1. اختيار العطور (عطر واحد أو Pack) -->
+            <div class="perfume-selectors">
+                <div class="select-box-wrapper">
+                    <div class="select-details">
+                        <label>Parfum 1 ( +  50ML)</label>
+                        <select id="packPerfume1" class="custom-select" required>
+                            <option value="">-- اختر العطر الأول --</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="select-box-wrapper">
+                    <div class="select-details">
+                        <label>Parfum 2 ( +50ML)</label>
+                        <select id="packPerfume2" class="custom-select">
+                            <option value="">-- لا أريد عطر ثاني --</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="select-box-wrapper">
+                    <div class="select-details">
+                        <label>Parfum 3 (+50ML)</label>
+                        <select id="packPerfume3" class="custom-select">
+                            <option value="">-- لا أريد عطر ثالث --</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. استمارة الشحن المباشرة -->
+            <div class="delivery-info-box">
+                <h3 class="delivery-title">Informations de livraison</h3>
+                
+                <form id="directOrderForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>NOM COMPLET *</label>
+                            <input type="text" id="custName" class="form-control" placeholder="Prénom et nom" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>TÉLÉPHONE *</label>
+                            <input type="tel" id="custPhone" class="form-control" placeholder="06 12 34 56 78" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>VILLE *</label>
+                            <input type="text" id="custCity" class="form-control" placeholder="Tapez votre ville." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>ADRESSE COMPLÈTE *</label>
+                            <input type="text" id="custAddress" class="form-control" placeholder="Rue, quartier, numéro, ..." required>
+                        </div>
+                    </div>
+
+                    <div class="free-shipping-badge">
+                        <i class="fa-solid fa-truck-fast"></i> Livraison gratuite partout au Maroc
+                    </div>
+
+                    <button type="submit" class="direct-submit-btn" id="directSubmitBtn">
+                        <span id="directSubmitText">Commander 199DH
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FLOATING SOCIAL BUTTONS ================= -->
+    <div class="floating-socials">
+        <a href="https://wa.me/212634867129?text=مرحبا%20ARAM%20PARFUM،%20أريد%20الاستفسار%20عن%20العطور" target="_blank" class="float-btn whatsapp" title="تواصل عبر واتساب">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/aram_parfum?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="float-btn instagram" title="تابعنا على انستغرام">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo gold-text">ARAM PARFUM</div>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">عنوان الفخامة والأناقة الاستثنائية.</p>
+            
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/aram_parfum" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/212634867129" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 ARAM PARFUM. جميع الحقوق محفوظة.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= TOAST NOTIFICATIONS ================= -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- ================= SCROLL TO TOP ================= -->
+    <button class="scroll-top-btn" id="scrollTopBtn" title="العودة للأعلى">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- External Script -->
+    <script src="script.js"></script>
+</body>
+</html>
