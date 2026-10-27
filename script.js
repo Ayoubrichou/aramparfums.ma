@@ -3,7 +3,10 @@
 // ==========================================
 const PACK_PRICE = 50;               // ثمن العطر الواحد داخل الـ Pack
 const WHATSAPP_NUMBER = "212634867129";
-
+const PACK_FULL_PRICE = 199;         // taman dyal 3 3tor
+function getOrderTotal(count) {
+    return count === 3 ? PACK_FULL_PRICE : count * PACK_PRICE;
+}
 // ==========================================
 // 1. عطور نسائية (20 عطر بـ 50 DH)
 // ==========================================
@@ -341,8 +344,15 @@ document.getElementById('directOrderForm')?.addEventListener('submit', function 
         `- الهاتف: ${phone}\n` +
         `- المدينة: ${city}\n` +
         `- العنوان: ${address}\n\n` +
-        `*المجموع الكلي:* ${selected.length * PACK_PRICE} DH (توصيل مجاني)`;
-
+        `*المجموع الكلي:* ${getOrderTotal(selected.length)} DH (توصيل مجاني)`;
+        // Meta Pixel: commande jat mn l'formulaire
+if (typeof fbq === 'function') {
+    fbq('track', 'Purchase', {
+        value: getOrderTotal(selected.length),
+        currency: 'MAD',
+        num_items: selected.length
+    });
+}
     const submitBtn = document.getElementById('directSubmitBtn');
     const submitText = document.getElementById('directSubmitText');
     const originalHTML = submitText ? submitText.innerHTML : null;
